@@ -16,26 +16,22 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         "impacto-purple": {
-          DEFAULT: "var(--impacto-purple)",
-          light: "var(--impacto-purple-light)",
+          DEFAULT: "#923fa8",
+          light: "#b76fd0",
           lighter: "var(--impacto-purple-lighter)",
         },
         "impacto-gold": {
-          DEFAULT: "var(--impacto-gold)",
+          DEFAULT: "#cba135",
+          light: "#e3c676",
         },
         "impacto-dark": {
-          DEFAULT: "var(--impacto-dark)",
+          DEFAULT: "#242424",
         },
         "impacto-light": {
           DEFAULT: "var(--impacto-light)",
         },
-        'impacto-gold': '#cba135',
-        'impacto-gold-light': '#e3c676',
-        'impacto-purple': '#923fa8',
-        'impacto-purple-light': '#b76fd0',
         'impacto-lavender': '#e9d5ff',
-        'impacto-white': '#fff3f3',
-        'impacto-dark': '#242424'
+        'impacto-white': '#fff3f3'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -25,9 +25,8 @@ export const CartItem: React.FC<CartItemProps> = ({ id, name, price, quantity, i
     } else {
       // Implementar la lógica para decrementar
       const item = { id, name, price, image };
-      // Por ahora usamos removeFromCart, pero deberíamos implementar decrementQuantity
       removeFromCart(id);
-      addToCart({ ...item, quantity: quantity - 1 });
+      addToCart(item); // Remove quantity from the spread as it's handled by the store
     }
   };
 
