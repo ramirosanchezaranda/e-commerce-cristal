@@ -131,7 +131,13 @@ export default function FeaturedProducts() {
                   <h2 className="slide-text text-2xl md:text-3xl mb-2">{product.name}</h2>
                   <p className="slide-description text-base">{product.description}</p>
                 </div>
-                <div className="product-image-container">
+                <div className="product-image-container" style={{
+                  position: 'relative',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  height: '100%'
+                }}>
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -139,7 +145,8 @@ export default function FeaturedProducts() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="product-image"
                     style={{
-                      objectFit: 'contain'
+                      objectFit: 'contain',
+                      margin: 'auto'
                     }}
                     priority
                   />
