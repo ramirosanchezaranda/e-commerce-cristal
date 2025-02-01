@@ -47,7 +47,7 @@ export default function CartPage() {
 
         <div className="mt-8 bg-white rounded-lg shadow-md p-6">
           <div className="flex justify-between items-center mb-4">
-            <span className="text-gray-600">Subtotal ({totalItems} items)</span>
+            <span className="text-gray-600">Subtotal ({totalItems()} items)</span>
             <span className="text-xl font-semibold">${totalPrice.toFixed(2)}</span>
           </div>
 

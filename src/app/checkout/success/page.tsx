@@ -1,9 +1,8 @@
-// src/app/checkout/success/page.tsx
 'use client';
 import { useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
-import useCartStore from '@/store/cartStore';
+import { useCartStore } from '@/store/cartStore';
 
 export default function SuccessPage() {
   const searchParams = useSearchParams();
