@@ -76,10 +76,7 @@ export default function FeaturedProducts() {
         pinSpacing: true,
         start: "top top",
         end: () => `+=${window.innerWidth * totalSlides}`,
-        scrub: {
-          ease: "power1.inOut",
-          smoothing: 1
-        },
+        scrub: 1,
         invalidateOnRefresh: true,
         snap: {
           snapTo: (value) => Math.round(value * totalSlides) / totalSlides,
